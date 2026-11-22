@@ -11,11 +11,17 @@
     "require": {
         "php": "^8.3",
         "laravel/framework": "^13.17",
-        "laravel/tinker": "^3.0"
+        "laravel/tinker": "^3.0",
+        "madfortech/camera-overlay": "dev-main",
+        "nativephp/mobile": "^4.8",
+        "nativephp/mobile-camera": "^1.1",
+        "nativephp/mobile-microphone": "^1.2",
+        "nativephp/mobile-ui": "^0.10.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/boost": "^2.2",
+        "laravel/breeze": "^2.4",
         "laravel/pail": "^1.2.5",
         "laravel/pao": "^1.0.6",
         "laravel/pint": "^1.27",
@@ -88,5 +94,19 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "name": "camera-overlay",
+            "type": "vcs",
+            "url": "https://github.com/madfortech/camera-overlay"
+        },
+        {
+            "type": "path",
+            "url": "packages/telescript/camera-overlay",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }

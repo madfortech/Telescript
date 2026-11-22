@@ -25,3 +25,7 @@ _ide_helper.php
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Credential files (keystores, private keys, etc.)
+/credentials/
+/crash-log.txt
